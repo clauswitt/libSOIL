@@ -4,8 +4,8 @@ INSTALL_FILE = install -p -o root -g admin -m 644
 INSTALL_DIR = install -o root -g admin -d
 LN = ln -s
 RM = rm -fv
-CFLAGS += -c -O2 -Wall
-LDFLAGS += -framework OpenGL -framework CoreFoundation
+CFLAGS += -c -O2 -Wall -m32
+LDFLAGS += -framework OpenGL -framework CoreFoundation -m32
 
 CFILES = image_DXT.c image_helper.c SOIL.c stb_image_aug.c
 OFILES = $(CFILES:.c=.o)
