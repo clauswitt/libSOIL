@@ -5,8 +5,8 @@ INSTALL_DIR = install -d
 LIBTOOL = libtool
 LN = ln -s
 RM = rm -fv
-CFLAGS += -c -O2 -Wall -m32
-LDFLAGS += -framework OpenGL -framework CoreFoundation -m32
+CFLAGS += -c -O2 -Wall -m64
+LDFLAGS += -framework OpenGL -framework CoreFoundation -m64
 
 CFILES = image_DXT.c image_helper.c SOIL.c stb_image_aug.c stb_image_write.c
 OFILES = $(CFILES:.c=.o)
